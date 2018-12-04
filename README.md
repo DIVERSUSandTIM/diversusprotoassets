@@ -1,5 +1,6 @@
 # diversusprotoassets
-design assets for the Diversus site
+
+Continously deployed design assets for the Diversus site
 
 ## URL Mappings
 
