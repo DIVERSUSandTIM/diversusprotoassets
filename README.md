@@ -21,9 +21,10 @@ This table illustrates the mapping between paths in this repo and the deployment
 ## Resources for SVG and Javascript integration
 
 * https://inkscape.org/learn/animation/
-* http://snapsvg.io/
+* https://tympanus.net/Tutorials/ResponsiveSVGs/
 * http://old.carto.net/papers/svg/samples/
 * http://old.carto.net/papers/svg/manipulating_svg_with_dom_ecmascript/index.shtml
+* http://snapsvg.io/
 
 ## Experiments go in the `experiments` directory
 
