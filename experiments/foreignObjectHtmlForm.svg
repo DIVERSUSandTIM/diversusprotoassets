@@ -7,10 +7,9 @@
                 <input type="text"/>
                 <input type="text"/>
             </form>
+            <a href="https://stackoverflow.com/questions/5972705/">use SVG to lay out an HTML form</a>
         </body>
     </foreignObject>
     <circle cx="60" cy="80" r="30" fill="#00ff00" fill-opacity="0.5"/>
 </svg>
-<!--
-    https://stackoverflow.com/questions/5972705/
--->
+
