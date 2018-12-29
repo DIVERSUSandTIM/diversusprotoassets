@@ -3,10 +3,10 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@types/react": "^16.4.16",
-		"framer": "^0.9.6"
+		"framer": "^0.10.1"
 	},
 	"peerDependencies": {
-		"framer": "^0.9.6",
+		"framer": "^0.10.1",
 		"react": "^16.3.0",
 		"react-dom": "^16.3.0"
 	},
@@ -15,9 +15,13 @@
 	},
 	"author": "Martin Sambauer",
 	"dependencies": {
-		"@framer/benjamin.icon-generator": "^1.8.0",
+		"@framer/edoardo.ios-kit": "^1.4.0",
 		"@framer/google.material-design": "^1.0.0",
 		"@framer/kasimir.iphone-and-ipad-kit": "^1.9.0",
-		"@framer/steveruizok.page-indicator": "^1.5.0"
+		"@framer/krijn.random-avatar": "^1.5.0",
+		"@framer/northam.animated-vertical-menu": "^1.0.0",
+		"components": "^0.1.0",
+		"react-diversus-flower": "file:/Users/martinadmin/Desktop/Prototype Framer/Prototype Framer/react-diversus-flower",
+		"styled": "^1.0.0"
 	}
 }
