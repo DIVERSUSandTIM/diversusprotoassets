@@ -13,6 +13,7 @@ export const ExampleTag = createDesignComponent<{parentSize?:{width:number|strin
 export const Gauge979ca6LightComponent = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_lKEhswZvU", {}, 369,368);
 export const LinkTypeArea = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_Rd2MoD_gI", {}, 375,133);
 export const LinkTypeBtnSelfDefined = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_OZzwFRyaC", {}, 160,34);
+export const ListElement_2_Component = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_qlCjPgfKa", {}, 375,190);
 export const ListElement_Component = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_AFMNmClMZ", {}, 375,139);
 export const NameOfBtn = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_z1wquiqmT", {}, 307,66);
 export const PageIndicatorComponent = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_oAhpxtxDV", {}, 265,38);
