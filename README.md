@@ -46,7 +46,7 @@ Again, this looks fine here on GitHub but does not actually *work* unless you vi
 * `public/experiments/trafficlights.svg`
 * https://diversus.nooron.com/diversus/experiments/trafficlights.svg
 
-## Suggestion, the mockup goes in the `_graphics_dev` directory
+## Suggestion, mockups go in the `_graphics_dev` directory
 
 ### a page from the Diversus prototype mockups from Figma
 
