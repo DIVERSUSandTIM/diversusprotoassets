@@ -6,6 +6,10 @@
 <title>Diversus</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+<script src="https://diversus.nooron.com/email-login/lib/email-login.js"></script>
+<script>
+	email_login = new EmailLogin("#login_submit");
+</script>
 </head>
 
 <body>
@@ -14,7 +18,7 @@
 
 <form id="login">
 <input type="email" class="submitted" placeholder="please enter email">
-<button type="submit" class="ready">send deeplink <span class="justify_icon"><img src="graphics/paper-plane-solid.svg" alt="send_icon" id="send_airplane"></span></button>
+<button id="login_submit" type="submit" class="ready">send deeplink <span class="justify_icon"><img src="graphics/paper-plane-solid.svg" alt="send_icon" id="send_airplane"></span></button>
 
 </form>
 <div id="deeplink_sent" class="on_submit">deeplink sent<span class="justify_icon">✓</span></div>
