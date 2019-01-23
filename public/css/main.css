@@ -18,13 +18,7 @@ body {
 	margin: 4em auto 10em;
 	display: block;
 }
-#instruct {
-	width: 60%;
-    margin: 2em auto;
-    text-align: center;
-    font-size: 1.6em;
-	font-weight: 100;
-}
+
 #login {
 	display: block;
 	margin: auto;
@@ -52,24 +46,27 @@ body {
 #login button[type=submit] {
 	background-color: #fff;
 	display:block;
-	min-width: 300px;
+	width: 300px;
 	color: #000;
 	font-size: 1.4em;
 	font-family: "Ubuntu", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-radius: 0;
 	margin: 1.5em auto;
 	border: 2px solid #fff;
 	padding: 0.4em;	
-	font-weight: 100;
-}
-#login button[type=submit]{	
 	font-weight: 400;
 }
-#login div.submitted{
+#deeplink_sent{
+	display:block;
+	width: 210px;
+	border: 2px solid #fff;
 	background-color: #232842;
-	color: #fff;			
+	color: #fff;	
+	margin: 1.5em auto;
+	font-size: 1.4em;
+	padding: 0.4em 20px 0.4em 70px;	
+	font-weight: 300;
 }
 .justify_icon{
 	float: right;
@@ -79,9 +76,16 @@ body {
 #send_airplane {
 	width: 1em;
 }
-.submitted, #instruct {
-	display:none;
-}
 #instruct {
+	width: 60%;
+    margin: 2em auto;
+    text-align: center;
+    font-size: 1.6em;
+	font-weight: 100;
+}
+#deeplink_sent, #instruct {
+/*	display:none;*/
+}
+#login button[type=submit], #login input[type=email]{
 	display:none;
 }

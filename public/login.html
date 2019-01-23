@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diversus</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
@@ -14,9 +15,10 @@
 <form id="login">
 <input type="email" class="submitted" placeholder="please enter email">
 <button type="submit" class="ready">send deeplink <span class="justify_icon"><img src="graphics/paper-plane-solid.svg" alt="send_icon" id="send_airplane"></span></button>
-<button type="submit" class="on_submit">deeplink sent<span class="justify_icon">✓</span></button>
+
 </form>
-<p id="instruct" class="on_submit">please go to mail and click the deeplink!</p>
+<div id="deeplink_sent" class="on_submit">deeplink sent<span class="justify_icon">✓</span></div>
+<p id="instruct" class="on_submit">please go to your email and click the deeplink!</p>
 	
 </body>
 </html>
