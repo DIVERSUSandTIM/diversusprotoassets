@@ -9,7 +9,12 @@
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="https://diversus.nooron.com/email-login/lib/email-login.js"></script>
 <script>
-	email_login = new EmailLogin("#login_form_box");
+	retval = {}
+	if enable_login
+		retval = new EmailLogin("#login_form_box")
+  	else
+    	$("#user_login_and_actions").hide()
+ 	return retval
 </script>
 </head>
 
