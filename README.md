@@ -46,11 +46,11 @@ Again, this looks fine here on GitHub but does not actually *work* unless you vi
 * `public/experiments/trafficlights.svg`
 * https://diversus.nooron.com/diversus/experiments/trafficlights.svg
 
-## Suggestion, the mockup goes in the `graphics` directory
+## Suggestion, the mockup goes in the `_graphics_dev` directory
 
 ### a page from the Diversus prototype mockups from Figma
 
-* `public/graphics/Mobile_Login_02_deeplinke_sent.svg`
-* https://diversus.nooron.com/diversus/graphics/Mobile_Login_02_deeplinke_sent.svg
+* `public/_graphics_dev/Mobile_Login_02_deeplinke_sent.svg`
+* https://diversus.nooron.com/diversus/_graphics_dev/Mobile_Login_02_deeplinke_sent.svg
 
-[<img src="public/graphics/Mobile_Login_02_deeplinke_sent.svg">]()
+[<img src="public/_graphics_dev/Mobile_Login_02_deeplinke_sent.svg">]()
