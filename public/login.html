@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
 <script src="https://diversus.nooron.com/email-login/lib/email-login.js"></script>
 <script>
-	email_login = new EmailLogin("#login_submit");
+	email_login = new EmailLogin("#login_form_box");
 </script>
 </head>
 
@@ -19,8 +19,8 @@
 <form id="login">
 <input type="email" class="submitted" placeholder="please enter email">
 <button id="login_submit" type="submit" class="ready">send deeplink <span class="justify_icon"><img src="graphics/paper-plane-solid.svg" alt="send_icon" id="send_airplane"></span></button>
-
 </form>
+<div id="login_form_box"></div>
 <div id="deeplink_sent" class="on_submit">deeplink sent<span class="justify_icon">✓</span></div>
 <p id="instruct" class="on_submit">please go to your email and click the deeplink!</p>
 	
