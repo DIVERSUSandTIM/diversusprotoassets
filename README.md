@@ -16,7 +16,7 @@ This table illustrates the mapping between paths in this repo and the deployment
 
 ## TIPS
 
-* Feel free to reorganize things, but only contents of the `public` directory will arrive at https://diversus.nooron.com/diversus
+* Feel free to reorganize things, but only contents of the `public` directory will arrive at https://diversus.nooron.com/vhost
 * Please don't add big libraries directly to this repo, it would probably be better to use npm or yarn for that.  Shawn can help!
 
 ## Resources for SVG and Javascript integration
