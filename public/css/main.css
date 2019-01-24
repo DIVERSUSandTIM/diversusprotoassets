@@ -2,13 +2,16 @@
 /* ============ CSS for Diversus ============ */
 /* Created January 2019 by Nooron UG          */
 
-/* ---------------- Universal -----------------*/
+/* ------------------ Global ------------------*/
 
 body {
 	background-color: #232842;
 	color: #fff;
 	font-family: "Ubuntu", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 }
+
+/* ------------------ Layout -------------------*/
+
 
 /* ---------------- Login Form -----------------*/
 
@@ -19,12 +22,12 @@ body {
 	display: block;
 }
 
-#login {
+#join {
 	display: block;
 	margin: auto;
 	font-weight: 300;
 }
-#login input {
+#join input[type=email]{
 	display:block;
 	margin: auto;
 	border-radius: 0;
@@ -38,12 +41,12 @@ body {
 	color: #fff;
 	font-weight: 100;
 }
-#login input[type=email]{
+#join input[type=email]{
 	min-width: 300px;
 	font-size: 1.5em;
 }
 
-#login button[type=submit] {
+#join_button {
 	background-color: #fff;
 	display:block;
 	width: 300px;
@@ -54,7 +57,7 @@ body {
 	border-radius: 0;
 	margin: 1.5em auto;
 	border: 2px solid #fff;
-	padding: 0.4em;	
+	padding: 0.4em;
 	font-weight: 400;
 }
 #deeplink_sent{
@@ -62,10 +65,10 @@ body {
 	width: 210px;
 	border: 2px solid #fff;
 	background-color: #232842;
-	color: #fff;	
+	color: #fff;
 	margin: 1.5em auto;
 	font-size: 1.4em;
-	padding: 0.4em 20px 0.4em 70px;	
+	padding: 0.4em 20px 0.4em 70px;
 	font-weight: 300;
 }
 .justify_icon{
@@ -84,9 +87,42 @@ body {
     font-size: 1.6em;
 	font-weight: 100;
 }
-#deeplink_sent, #instruct {
-	display:none;
+
+/* ---------------- Video Provider -----------------*/
+
+.video_list_container {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #2196F3;
+  padding: 10px;
 }
-#login button[type=submit], #login input[type=email]{
-/*	display:none;*/
+
+.video_item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
+
+.video_image {
+
+}
+.video_description {
+
+}
+.video_description h4 {
+
+}
+.video_description .rdfs__label {
+
+}
+.video_description .creation__date {
+
+}
+.video_description .schema__description {
+	
+}
+
+
+/* ---------------- Video Provider -----------------*/

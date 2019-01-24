@@ -9,14 +9,10 @@
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/email-login/lib/email-login.js"></script>
 <script>
-	retval = {};
-	enable_login = true;
-	if (enable_login){
-		retval = new EmailLogin("#login_form_box");
-	} else {
-    	$("#user_login_and_actions").hide();
-	}
- 	return retval;
+	$( document ).ready(function(){
+		console.log("ready!");
+		retval = new EmailLogin("#login_form");
+	});
 </script>
 </head>
 
@@ -24,13 +20,14 @@
 
 <img src="/vhost/graphics/diversus_logo.svg" alt="" id="logo">
 
-<form id="login">
+<!--form id="login">
 <input type="email" class="submitted" placeholder="please enter email">
 <button id="login_submit" type="submit" class="ready">send deeplink <span class="justify_icon"><img src="/vhost/graphics/paper-plane-solid.svg" alt="send_icon" id="send_airplane"></span></button>
-</form>
-<div id="login_form_box"></div>
+</form-->
+<div id="login_form"></div>
 <div id="deeplink_sent" class="on_submit">deeplink sent<span class="justify_icon">✓</span></div>
 <p id="instruct" class="on_submit">please go to your email and click the deeplink!</p>
 
 </body>
+
 </html>
