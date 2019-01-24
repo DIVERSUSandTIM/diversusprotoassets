@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diversus</title>
-<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="/vhost/css/main.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
 <script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="https://diversus.nooron.com/email-login/lib/email-login.js"></script>
+<script src="/email-login/lib/email-login.js"></script>
 <script>
 	retval = {};
 	enable_login = true;
@@ -21,16 +21,16 @@
 </head>
 
 <body>
-	
-<img src="graphics/diversus_logo.svg" alt="" id="logo">
+
+<img src="/vhost/graphics/diversus_logo.svg" alt="" id="logo">
 
 <form id="login">
 <input type="email" class="submitted" placeholder="please enter email">
-<button id="login_submit" type="submit" class="ready">send deeplink <span class="justify_icon"><img src="graphics/paper-plane-solid.svg" alt="send_icon" id="send_airplane"></span></button>
+<button id="login_submit" type="submit" class="ready">send deeplink <span class="justify_icon"><img src="/vhost/graphics/paper-plane-solid.svg" alt="send_icon" id="send_airplane"></span></button>
 </form>
 <div id="login_form_box"></div>
 <div id="deeplink_sent" class="on_submit">deeplink sent<span class="justify_icon">✓</span></div>
 <p id="instruct" class="on_submit">please go to your email and click the deeplink!</p>
-	
+
 </body>
 </html>
