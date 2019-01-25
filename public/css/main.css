@@ -6,7 +6,7 @@
 
 body {
 	background-color: #232842;
-	color: #fff;
+	color: #000;
 	font-family: "Ubuntu", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 }
 
@@ -14,6 +14,9 @@ body {
 
 .fractalpanel_controls_bar {
 	display: none;
+}
+.fractalpanel_content_area {
+	background-color: #fff;
 }
 
 /* ---------------- Login Form -----------------*/
@@ -144,33 +147,90 @@ body {
 .video_list_container {
   display: grid;
   grid-template-columns: auto;
-  padding: 10px;
 }
 
 .video_item {
+	background-image: linear-gradient(#eee, #fff);
+	font-size:0.8em;
+	color: #777;
+	border-bottom: #bbb solid 1px;
 }
 
 .video_image {
-	max-width: 400px;
 	float: left;
+	display:inline-block;
+	width:100px;
+	height:100px;
+	background-color: #555;
+	overflow: hidden;
 }
 .video_image video {
-	width: 200px;
+	height: 100%;
+	transform: translateX(-25%);
 }
 .video_description {
-	float: right;
+	float: left;
+	display:inline-block;
+	width:calc(100% - 100px);
+	min-height: calc(100px - 4em);
+	position: relative;
+	padding-bottom: 2em;
+	padding-top: 2em;
 }
 .video_description h4 {
+	margin-left: 1em;
+	margin-top: 0.2em;
+	margin-bottom: 0.3em;
+	margin-right: 0.1em;
+}
+.video_description a{
+	text-decoration: none;
+	color: #555;
+}
 
+.video_description .feedback__likes {
+	margin-left: 1em;
+	font-size: 0.7em;
+	position: absolute;
+	top: 0.8em;;
+	left: 0.2em;
+}
+
+.video_description .creation__date {
+	font-size: 0.7em;
+	position: absolute;
+	top: 0.8em;;
+	right: 0.4em;
 }
 .video_description .rdfs__label {
 
 }
-.video_description .creation__date {
-
-}
 .video_description .schema__description {
+	margin-left: 1.1em;
+	font-size: 0.9em;
+}
 
+.video_description .uploader__profile {
+	display: inline-block;
+	line-height: 1.9;
+	font-size: 0.9em;
+	position: absolute;
+  bottom: 0;
+	right: 2.5em;
+}
+.video_description .uploader_icon {
+	display: inline-block;
+	height: 1.2em;
+	width: 1.2em;
+	line-height: 1.2em;
+	background-color: #666;
+	text-align: center;
+	color: #fff;
+	margin: 3px;
+	position: absolute;
+  bottom: 0;
+  right: 0.2em;
+	border-radius: 1.2em;
 }
 
 
