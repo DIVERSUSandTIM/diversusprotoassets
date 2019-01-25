@@ -12,21 +12,23 @@
 	$( document ).ready(function(){
 		console.log("ready!");
 		retval = new EmailLogin("#login_form");
+		var new_button = "<button id='join_button' type='submit'>send deeplink <span class='justify_icon'><img src='/vhost/graphics/paper-plane-solid.svg' alt='send_icon' id='send_airplane'></span></button>"
+		var email_msg = "<div id='deeplink_sent' class='on_submit'>deeplink sent<span class='justify_icon'>✓</span></div><p id='instruct' class='on_submit'>please go to your email and click the deeplink!</p>"
+		$("#email-login-input").attr("placeholder","please enter email")
+		$("#join_button").replaceWith(new_button)
+		$("#check_your_email_msg").replaceWith(email_msg)
+		$("#email-login").removeProp("style")
+		$("#check_your_email a").attr("style", "font-size: 10px;")
+		//
 	});
 </script>
 </head>
 
 <body>
-
-<img src="/vhost/graphics/diversus_logo.svg" alt="" id="logo">
-
-<!--form id="login">
-<input type="email" class="submitted" placeholder="please enter email">
-<button id="login_submit" type="submit" class="ready">send deeplink <span class="justify_icon"><img src="/vhost/graphics/paper-plane-solid.svg" alt="send_icon" id="send_airplane"></span></button>
-</form-->
+<div id="logo_wrap">
+	<img id="diversus_logo" src="/vhost/graphics/diversus_logo.svg" alt="Diversus Logo">
+</div>
 <div id="login_form"></div>
-<div id="deeplink_sent" class="on_submit">deeplink sent<span class="justify_icon">✓</span></div>
-<p id="instruct" class="on_submit">please go to your email and click the deeplink!</p>
 
 </body>
 

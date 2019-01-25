@@ -12,17 +12,24 @@ body {
 
 /* ------------------ Layout -------------------*/
 
+.fractalpanel_controls_bar {
+	display: none;
+}
 
 /* ---------------- Login Form -----------------*/
 
-#logo {
-	width: 10%;
-	min-width: 110px;
+#logo_wrap {
+	width: 100%;
 	margin: 4em auto 7em;
 	display: block;
 }
-
-#join {
+#diversus_logo {
+	width: 10%;
+	min-width: 110px;
+	margin: auto;
+	display: block;
+}
+#login_form {
 	display: block;
 	margin: auto;
 	font-weight: 300;
@@ -40,10 +47,11 @@ body {
 	box-shadow: none;
 	color: #fff;
 	font-weight: 100;
-}
-#join input[type=email]{
 	min-width: 300px;
 	font-size: 1.5em;
+}
+#join label[for=email-login-input]{
+	display: none;
 }
 
 #join_button {
@@ -62,14 +70,16 @@ body {
 }
 #deeplink_sent{
 	display:block;
-	width: 210px;
 	border: 2px solid #fff;
 	background-color: #232842;
 	color: #fff;
 	margin: 1.5em auto;
-	font-size: 1.4em;
-	padding: 0.4em 20px 0.4em 70px;
+	font-size: 1.2em;
+	padding: 0.4em 20px 0.4em 0;
 	font-weight: 300;
+	text-align: inherit;
+	line-height: inherit;
+	width: 300px;
 }
 .justify_icon{
 	float: right;
@@ -81,35 +91,74 @@ body {
 	width: 1em;
 }
 #instruct {
-	width: 70%;
-    margin: 2em auto;
-    text-align: center;
-    font-size: 1.6em;
+	width: 90%;
+  margin: 2em auto;
+  text-align: center;
+  font-size: 1.0em;
 	font-weight: 100;
 }
+#check_your_email{
+  margin: auto;
+  text-align: center;
+	line-height: 1.5em;
+	font-size: 1.6em;
+}
+#user_details {
+	text-align: center;
+}
+#logout_btn {
+	background-color: #fff;
+	display:block;
+	width: 300px;
+	color: #000;
+	font-size: 1.4em;
+	font-family: "Ubuntu", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	box-shadow: none;
+	border-radius: 0;
+	margin: 1.5em auto;
+	border: 2px solid #fff;
+	padding: 0.4em;
+	font-weight: 400;
+}
+/*-- fix to handle current layout of frame pages --*/
+.split-pane-frame #logout_btn {
+	width: inherit;
+	font-size: 0.8em;
+	margin: inherit;
+	padding: 0 0.5em;
+	border: none;
+	display: inline;
+}
+
 
 /* ---------------- Video Provider -----------------*/
+
+.video_provider {
+	background-color: #777;
+}
+
+
+
+/* ------------------ Video List -------------------*/
 
 .video_list_container {
   display: grid;
   grid-template-columns: auto;
-  background-color: #2196F3;
   padding: 10px;
 }
 
 .video_item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
 }
 
 .video_image {
-
+	max-width: 400px;
+	float: left;
+}
+.video_image video {
+	width: 200px;
 }
 .video_description {
-
+	float: right;
 }
 .video_description h4 {
 
@@ -121,7 +170,7 @@ body {
 
 }
 .video_description .schema__description {
-	
+
 }
 
 
