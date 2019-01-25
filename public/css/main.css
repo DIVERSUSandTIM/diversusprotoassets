@@ -144,10 +144,11 @@ body {
 
 /* ------------------ Video List -------------------*/
 
-.video_list_container {
+.video_list {
   display: grid;
-  grid-template-columns: auto;
+	grid-template-columns: auto;
 }
+
 
 .video_item {
 	background-image: linear-gradient(#eee, #fff);
@@ -235,3 +236,29 @@ body {
 
 
 /* ---------------- Video Provider -----------------*/
+
+
+
+
+@media only screen and (min-width : 481px) and (max-width : 1024px) {
+.video_list {
+	width: 90%;
+	margin: auto;
+	grid-template-columns: 50% 50%;
+}
+.video_item {
+	margin: 0.5em;
+	border: none;
+}
+}
+@media screen and (min-width: 1024px) {
+.video_list {
+	width: 90%;
+	margin: auto;
+	grid-template-columns: 33% 33% 33%;
+}
+.video_item {
+	margin: 0.5em;
+	border: none;
+}
+}
