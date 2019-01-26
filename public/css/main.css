@@ -269,6 +269,16 @@ body {
   font-weight: 300;
 }
 
+.navigation_wrap .mobile_nav_menu_wrap {
+	display: none;
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	width: 100%;
+	background-color: #232842;
+	z-index: 2;
+	padding-top: 40px;
+}
 
 
 
