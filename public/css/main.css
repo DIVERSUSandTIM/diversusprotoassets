@@ -16,9 +16,12 @@ body {
 	display: none;
 }
 .fractalpanel_content_area {
-    background-color: #fff;
-    padding-top: 0px;  /* only needs specifying because Diversus turns off the FractalPanel buttons by default */
-    height: 100%;      /* only needs specifying because Diversus turns off the FractalPanel buttons by default */
+  background-color: #fff;
+  padding-top: 0px;  /* only needs specifying because Diversus turns off the FractalPanel buttons by default */
+  height: 100%;      /* only needs specifying because Diversus turns off the FractalPanel buttons by default */
+}
+.split-pane-divider.horizontal-divider {
+	display: none;
 }
 /* ---------------- Login Form -----------------*/
 
@@ -133,6 +136,140 @@ body {
 	border: none;
 	display: inline;
 }
+
+/* ---------------- Navigation Bar -----------------*/
+
+#fp_2 {
+	height:calc(100% - 50px) !important;
+}
+#fp_2  .fractalpanel_content_area {
+
+}
+#fp_6 {
+	height:50px !important;
+	bottom: -14px;
+	overflow: visible;
+}
+#fp_6 .fractalpanel_content_area {
+	background-color: inherit;
+	overflow: visible;
+}
+
+.navigation_wrap {
+	background-color: #232842;
+	color: #999;
+	height: 50px;
+	position: relative;
+}
+.navigation_wrap .app_logo {
+	display: block;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.navigation_wrap .app_logo img {
+	width: 60%;
+	height: 60%;
+	-ms-transform: translateY(30%);
+	transform: translateY(30%);
+	display: block;
+	margin: auto;
+}
+.navigation_wrap .app_action_menu {
+	margin: auto;
+	width: calc(100% - 100px);
+	display: block;
+	height: 50px;
+}
+.navigation_wrap .app_action_menu i {
+	font-size: 30px;
+	width: 33%;
+	text-align: center;
+	line-height: 50px;
+}
+.navigation_wrap .nav_menu {
+	display: block;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.navigation_wrap .mobile_nav_icon {
+	height: 30px;
+	width: 30px;
+	display: block;
+	margin: auto;
+	-ms-transform: translateY(30%);
+	transform: translateY(30%);
+	font-size: 30px;
+	color: #eee;
+}
+
+.navigation_wrap .main_nav_options {
+
+}
+.navigation_wrap .mobile_nav_menu_wrap {
+	display: none;
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	width: 100%;
+	background-color: #232842;
+	z-index: 2;
+	padding-top: 40px;
+
+}
+.navigation_wrap ul.main_nav_options {
+	margin: 0;
+	padding: 0;
+}
+.navigation_wrap .main_nav_options li {
+	display: block;
+	width: 100%;
+	padding: 1em 2em;
+	background-color: #3a405ffc;
+	line-height: 1em;
+	margin-bottom: 2px;
+}
+.navigation_wrap .main_nav_options li i{
+	font-size: 1.5em;
+}
+.navigation_wrap .main_nav_options .nav_icon{
+	width: 2em;
+	margin-right: 1em;
+	display: inline-block;
+	color: #7a809efc;
+}
+
+.navigation_wrap .user_image {
+	height: 100px;
+	width: 100px;
+	display: block;
+	margin:auto;
+	background-color: #000;
+	border-radius: 100px;
+}
+.navigation_wrap .user_nav_wrap {
+	padding-bottom: 40px;
+}
+
+.navigation_wrap .user_nav_wrap h2 {
+	text-align: center;
+	margin: 1em 0 0.2em;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.navigation_wrap .user_nav_wrap h3 {
+	text-align: center;
+	margin: 0.4em 0 0.2em;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+
 
 
 /* ---------------- Video Provider -----------------*/
