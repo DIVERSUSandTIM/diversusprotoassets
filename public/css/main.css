@@ -219,7 +219,7 @@ body {
 	width: 100%;
 	background-color: #232842;
 	z-index: 2;
-	padding-top: 40px;
+	padding-top: 9999px;
 
 }
 .navigation_wrap ul.main_nav_options {
@@ -269,7 +269,7 @@ body {
   font-weight: 300;
 }
 
-.navigation_wrap .mobile_nav_menu_wrap {
+.navigation_wrap .mobile_add_video_wrap {
 	display: none;
 	position: absolute;
 	bottom: 50px;
@@ -278,6 +278,18 @@ body {
 	background-color: #232842;
 	z-index: 2;
 	padding-top: 40px;
+	padding-top: 9999px;
+}
+.navigation_wrap .main_nav_options li:last-child {
+	border-top:  #232842 solid 3px;
+	border-bottom:  #232842 solid 3px;
+}
+
+.navigation_wrap .main_nav_options .cancel_button {
+	text-align: center;
+	width: 100%;
+	margin-left: -2em;
+
 }
 
 
