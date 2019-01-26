@@ -16,9 +16,10 @@ body {
 	display: none;
 }
 .fractalpanel_content_area {
-	background-color: #fff;
+    background-color: #fff;
+    padding-top: 0px;  /* only needs specifying because Diversus turns off the FractalPanel buttons by default */
+    height: 100%;      /* only needs specifying because Diversus turns off the FractalPanel buttons by default */
 }
-
 /* ---------------- Login Form -----------------*/
 
 #logo_wrap {
@@ -139,8 +140,10 @@ body {
 .video_provider {
 	background-color: #777;
 }
-
-
+.main_video {
+        width: 100%;
+        max-width: 480px;
+}
 
 /* ------------------ Video List -------------------*/
 
