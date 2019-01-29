@@ -468,11 +468,9 @@ form.video_provider {
 .video_list {
   display: grid;
 	grid-template-columns: auto;
-	display:none;
 }
 .video_list_background {
 	text-align: center;
-	height: 100%;
 	margin-top: 50%;
 }
 .video_list_background h1 {
