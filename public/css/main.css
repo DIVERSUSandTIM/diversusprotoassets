@@ -486,6 +486,8 @@ form.video_provider {
 .video_list_background {
 	text-align: center;
 	margin-top: 50%;
+	position: fixed;
+	width: 100%;
 }
 .video_list_background h1 {
 	font-size: 1em;
@@ -501,6 +503,15 @@ form.video_provider {
 	font-size:0.8em;
 	color: #777;
 	border-bottom: #bbb solid 1px;
+	position: relative;
+}
+
+.description_link_box {
+	width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  position: absolute;
 }
 
 .video_image {
