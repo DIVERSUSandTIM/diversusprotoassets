@@ -16,7 +16,9 @@ body {
 	padding: 0;
 	font-weight: 100;
 }
-
+.fractalpanel_knob {
+	display: none;
+}
 /* ------------------ Layout -------------------*/
 
 .fractalpanel_controls_bar {
@@ -553,40 +555,53 @@ form.video_provider {
 	border-radius: 1.2em;
 }
 
-
+/* ------------------ View Video Screen -------------------*/
 
 .main_vid_wrapper {
-	max-width: 1000px;
+	max-width: 600px;
+
+	position: relative;
+	margin: auto;
 }
 .main_vid_wrapper video{
 	display: block;
   margin: auto;
 	width: 100%;
-	max-width: 1000px;
+	max-width: 600px;
 }
-.main_vid_wrapper h3.main_video_title {
+.video_details_wrapper {
+	overflow:hidden;
+	max-width: 400px;
+	margin: 0 auto 1em;
+}
+
+.video_details_wrapper h3.main_video_title {
 	font-size: 0.9em;
   font-weight: 100;
   margin: 0.5em 1em 0.1em 1em;
 }
-.main_vid_wrapper .main_video_creation_date, .main_vid_wrapper .feedback__likes {
+.video_details_wrapper .main_video_creation_date, .video_details_wrapper .feedback__likes {
 	font-size: 0.6em;
   width: 45%;
   display: inline-block;
 	margin-left: 1em;
 }
-.main_vid_wrapper .main_video_creation_date {
+.video_details_wrapper .main_video_creation_date {
 	text-align: right;
 }
-.main_vid_wrapper p.main_video_description {
+.video_details_wrapper p.main_video_description {
 	margin: 0.3em 1.5em;
 	font-size: 0.7em;
 }
+.flower_wrap .a_flower {
+	width: 80%;
+	margin: auto;
+	max-width: 300px;
+}
 
 
-/* ---------------- Video Provider -----------------*/
 
-
+/* ---------------- Video List Responsive -----------------*/
 
 
 @media only screen and (min-width : 481px) and (max-width : 1024px) {
@@ -610,4 +625,21 @@ form.video_provider {
 	margin: 0.5em;
 	border: none;
 }
+}
+
+/* =================== Styles for LANDSCAPE for Mobile ================== */
+
+@media all and (orientation: landscape) {
+
+.main_vid_wrapper {
+
+}
+.level2_vids {
+
+}
+}
+
+@media (min-height: 800px) {
+
+
 }
