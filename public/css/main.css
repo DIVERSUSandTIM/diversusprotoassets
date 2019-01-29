@@ -190,6 +190,7 @@ body {
 	width: calc(100% - 100px);
 	display: block;
 	height: 50px;
+	color: #eee;
 }
 .navigation_wrap .app_action_menu i {
 	font-size: 30px;
@@ -242,6 +243,10 @@ body {
 	line-height: 1em;
 	margin-bottom: 2px;
 }
+.navigation_wrap .main_nav_options li:focus {
+
+}
+
 .navigation_wrap .main_nav_options li i{
 	font-size: 1.5em;
 }
@@ -292,6 +297,9 @@ body {
 .navigation_wrap .mobile_add_video_wrap li:last-child {
 	border-top:  #232842 solid 3px;
 	border-bottom:  #232842 solid 3px;
+}
+.navigation_wrap .mobile_add_video_wrap li:focus, .navigation_wrap .mobile_add_video_wrap li:active {
+	background-color: #2c314c;
 }
 
 .navigation_wrap .main_nav_options .cancel_button {
