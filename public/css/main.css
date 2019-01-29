@@ -484,6 +484,10 @@ form.video_provider {
 	width:100px;
 	height:100px;
 	background-color: #555;
+	background-image: url("../graphics/video_default_thumb.png");
+	background-size: cover;
+	background-position: center;
+
 	overflow: hidden;
 }
 .video_image video {
