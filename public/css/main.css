@@ -559,7 +559,7 @@ form.video_provider {
 
 .main_vid_wrapper {
 	max-width: 600px;
-
+	background-color:black;
 	position: relative;
 	margin: auto;
 }
@@ -568,6 +568,7 @@ form.video_provider {
   margin: auto;
 	width: 100%;
 	max-width: 600px;
+	max-height: 200px;
 }
 .video_details_wrapper {
 	overflow:hidden;
@@ -598,7 +599,9 @@ form.video_provider {
 	margin: auto;
 	max-width: 300px;
 }
-
+.flower_wrap .a_flower svg g{
+	stroke: #3d4469;
+}
 
 
 /* ---------------- Video List Responsive -----------------*/
@@ -614,6 +617,10 @@ form.video_provider {
 	margin: 0.5em;
 	border: none;
 }
+.main_vid_wrapper video{
+	max-height: 300px;
+}
+
 }
 @media screen and (min-width: 1024px) {
 .video_list {
@@ -625,6 +632,10 @@ form.video_provider {
 	margin: 0.5em;
 	border: none;
 }
+.main_vid_wrapper video{
+	max-height: 400px;
+}
+
 }
 
 /* =================== Styles for LANDSCAPE for Mobile ================== */
