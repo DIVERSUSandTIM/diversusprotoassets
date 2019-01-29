@@ -235,6 +235,12 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.navigation_wrap .main_nav_options li.disabled, .navigation_wrap .main_nav_options li.disabled i {
+	background-color: #484950fc;
+	color: #888888fc;
+}
+
+
 .navigation_wrap .main_nav_options li {
 	display: block;
 	width: 100%;
