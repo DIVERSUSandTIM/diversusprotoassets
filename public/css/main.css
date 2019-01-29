@@ -468,8 +468,21 @@ form.video_provider {
 .video_list {
   display: grid;
 	grid-template-columns: auto;
+	display:none;
 }
-
+.video_list_background {
+	text-align: center;
+	height: 100%;
+	margin-top: 50%;
+}
+.video_list_background h1 {
+	font-size: 1em;
+}
+.video_list_background p {
+	float: inherit;
+	font-size: 0.6em;
+	font-weight: 100;
+}
 
 .video_item {
 	background-image: linear-gradient(#eee, #fff);
