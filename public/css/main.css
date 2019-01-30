@@ -328,24 +328,69 @@ body {
 }
 */
 form.video_provider {
-	background-color: transparent;
-	margin-bottom: 30px;
-}
-.video_provider .mobile_page {
-	border-bottom: 1px solid #5f5f5f;
 	background: -moz-linear-gradient(top, #232842 0%, #0d0f19 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #232842 0%,#0d0f19 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #232842 0%,#0d0f19 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232842', endColorstr='#0d0f19',GradientType=0 ); /* IE6-9 */
+	margin-bottom: 30px;
 }
 .video_provider .mobile_page {
-	padding: 1em 0;
+	padding: 0 0 2em 0;
 }
+.local_action_bar {
+	top: 10px;
+	width: 100%;
+	position: absolute;
+}
+.local_action_bar .close_button {
+	float: right;
+	margin-right: 2em;
+}
+
+.video_provider  fieldset.upload_fields {
+	position: relative;
+	height: 50px;
+	padding-top: 50px;
+}
+
+.video_provider .upload_video .upload_fields input{
+
+}
+.video_provider .upload_video .upload_fields input[type="file"] {
+	background-color: #3d4469;
+  padding-left: 40px;
+  width: 80%;
+}
+
+.video_provider .upload_video .upload_fields span {
+	position: absolute;
+	left: 25px;
+	background-color: #40436a;
+	bottom: 14px;
+	pointer-events: none;
+	font-size: 0.9em;
+}
+
+.video_provider .upload_video .upload_fields .custom_file_upload {
+    border: 1px solid #888;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+		background-color: #3d4469;
+		position: relative;
+}
+.video_provider .upload_video .upload_fields .file_upload_wrap {
+	display: block;
+	margin: auto;
+	width: 320px;
+}
+
 .video_provider .mobile_page h3 {
 	font-size: 1em;
 	color: #bbb;
 	font-weight: 100;
 	margin-top: 0;
+	margin-left: 2em;
 }
 .video_provider fieldset {
 		border: 0px solid #696969;
@@ -362,6 +407,11 @@ form.video_provider {
 	width: 100%;
 	height: 100%;
 }
+
+.video_provider fieldset.record_fields {
+	padding-top: 60px;
+}
+
 .video_provider .rec_controls{
 		width: 150px;
 		display: block;
@@ -424,6 +474,7 @@ form.video_provider {
 	width: 130px;
 	background-color: #3d4469;
 	border-radius: 0;
+	border: #555 solid 2px;
 }
 
 .video_provider input.big_rec_btn {
@@ -446,13 +497,36 @@ form.video_provider {
 .video_provider .small_text {
 	font-size: 0.6em;
 }
+.video_provider .hosted_video .hosted_fields {
+	margin: 4em 0 0;
+}
+.video_provider .hosted_video .hosted_fields p {
+	font-size: 0.75em;
+  line-height: 1.5em;
+}
+.video_provider .hosted_video .hosted_fields img {
+	height: 0.8em;
+	margin: 0 0.3em -0.1em 0.3em;
+}
+.video_provider .hosted_video .hosted_fields span {
+	color: #8698fb;
+}
+
 .video_provider .video_type_selection {
 	width: 300px;
 	display: inline-block;
 	height: 40px;
 	position: relative;
 	top: 5px;
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='11' height='30'><circle cx='7' cy='15' r='4' fill='#555'/></svg>")  repeat-x;
+	/*    Fill color should be programically altered according to the needs of linkage -- nice red: #6E0001           */
 }
+
+.video_type_selection.custom_select {
+
+
+}
+
 .video_provider .tiny_thumb {
 	height: 40px;
 	width: 40px;
@@ -461,20 +535,27 @@ form.video_provider {
 	position: absolute;
 	top: 0;
 	border-radius: 40px;
+	border: 2px solid #777;
 }
 .video_provider .tiny_thumb.source {
-	left: 0
+	left: 0;
 }
 .video_provider .tiny_thumb.comment {
-	right: 0
+	right: 0;
+	border: 2px dashed #777;
 }
 .video_provider button[type=submit] {
-	background-color: transparent;
 	border: 1px solid #888;
 	border-radius: 0;
 	padding: 0.5em 2em;
 	color: #fff;
 	font-size: 0.9em;
+	margin: auto;
+  display: block;
+	background-color: #3d4469;
+}
+.video_provider button[type=submit]:active,  .video_provider button[type=submit]:focus{
+	background-color: #202540;
 }
 
 /* ------------------ Video List -------------------*/
