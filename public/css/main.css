@@ -3,7 +3,10 @@
 /* Created January 2019 by Nooron UG          */
 
 /* ------------------ Global ------------------*/
-
+html {
+	height: 100%;
+	width: 100%;
+}
 body {
 	background-color: #232842;
 	background: -moz-linear-gradient(top, #232842 0%, #0d0f19 100%); /* FF3.6-15 */
@@ -57,7 +60,7 @@ body {
 	text-align: center;
 	border: 0px;
 	border-bottom: 2px solid #fff;
-	background-color: #232842;
+	background-color: transparent;
 	font-family: "Ubuntu", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	box-shadow: none;
 	color: #fff;
@@ -336,11 +339,12 @@ form.video_provider {
 }
 .video_provider .mobile_page {
 	padding: 0 0 2em 0;
+	max-width: 600px;
+	margin: auto;
 }
 .local_action_bar {
 	top: 10px;
 	width: 100%;
-	position: absolute;
 }
 .local_action_bar .close_button {
 	float: right;
