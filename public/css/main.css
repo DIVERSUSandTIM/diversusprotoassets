@@ -409,11 +409,12 @@ form.video_provider {
 	display: block;
 	margin: auto;
 	width: 100%;
-	height: 100%;
+	max-width: 360px;
+	border-radius: 100%;
 }
 
 .video_provider fieldset.record_fields {
-	padding-top: 60px;
+	padding-top: 0;
 }
 
 .video_provider .rec_controls{
