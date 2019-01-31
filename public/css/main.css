@@ -337,6 +337,10 @@ form.video_provider {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232842', endColorstr='#0d0f19',GradientType=0 ); /* IE6-9 */
 	margin-bottom: 30px;
 }
+
+.video_provider :focus{
+	  outline-color: lightblue;
+}
 .video_provider .mobile_page {
 	padding: 0 0 2em 0;
 	max-width: 600px;
@@ -535,6 +539,15 @@ form.video_provider {
 		border: 1px solid #888;
 		margin: auto;
 	}
+.video_provider input.big_rec_btn:focus {
+	outline: none;
+	animation: recordglow 2s infinite;
+}
+@keyframes recordglow {
+	0% {box-shadow: 0px 0px 10px 0px red;}
+	50% {box-shadow: 0px 0px 30px 2px red;}
+	100% {box-shadow: 0px 0px 10px 0px red;}
+}
 
 .video_provider .select_vid_type{
 	width: 300px;
