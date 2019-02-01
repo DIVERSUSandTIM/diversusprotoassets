@@ -639,6 +639,9 @@ form.video_provider {
 	font-size: 0.6em;
 	font-weight: 100;
 }
+.logged_in .video_list_background {
+	display: none;
+}
 
 .video_item {
 	background-image: linear-gradient(#eee, #fff);
