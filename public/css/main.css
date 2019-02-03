@@ -4,8 +4,6 @@
 
 /* ------------------ Global ------------------*/
 html {
-	height: 100%;
-	width: 100%;
 }
 body {
 	background-color: #232842;
@@ -695,12 +693,16 @@ form.video_provider {
 	color: #555;
 }
 
+.video_description .video_details_wrapper {
+
+}
+
 .video_description .feedback__likes {
 	margin-left: 1em;
-	font-size: 0.7em;
 	position: absolute;
 	top: 0.8em;;
 	left: 0.2em;
+	font-size: 0.7em;
 }
 
 .video_description .creation__date {
@@ -708,6 +710,7 @@ form.video_provider {
 	position: absolute;
 	top: 0.8em;;
 	right: 0.4em;
+	font-size: 0.7em;
 }
 .video_description .rdfs__label {
 
@@ -766,12 +769,19 @@ form.video_provider {
   font-weight: 100;
   margin: 0.5em 1em 0.1em 1em;
 }
-.video_details_wrapper .main_video_creation_date, .video_details_wrapper .feedback__likes {
+.video_details_wrapper .main_video_creation_date, .video_details_wrapper .feedback__likes, .video_details_wrapper .oa__motivation{
 	font-size: 0.6em;
-  width: 45%;
+  width: 25%;
   display: inline-block;
+}
+.video_details_wrapper .feedback__likes {
+	width: 40%;
 	margin-left: 1em;
 }
+.video_details_wrapper .oa__motivation {
+	text-align: center;
+}
+
 .video_details_wrapper .main_video_creation_date {
 	text-align: right;
 }
