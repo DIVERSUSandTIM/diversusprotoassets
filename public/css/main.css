@@ -5,6 +5,11 @@
 /* ------------------ Global ------------------*/
 html {
 }
+
+#login_screen {
+	height: 100%;
+	background: #232842;
+}
 body {
 	background-color: #232842;
 	background: -moz-linear-gradient(top, #232842 0%, #0d0f19 100%); /* FF3.6-15 */
@@ -372,9 +377,10 @@ form.video_provider {
 	position: absolute;
 	left: 25px;
 	background-color: #40436a;
-	bottom: 14px;
+	bottom: 7px;
 	pointer-events: none;
 	font-size: 0.9em;
+	padding: 7px;
 }
 
 .video_provider .upload_video .upload_fields .custom_file_upload {
