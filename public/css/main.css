@@ -11,10 +11,7 @@ html {
 	background: #232842;
 }
 body {
-	background-color: #232842;
-	background: -moz-linear-gradient(top, #232842 0%, #0d0f19 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #232842 0%,#0d0f19 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #232842 0%,#0d0f19 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-color: #0d0f19;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232842', endColorstr='#0d0f19',GradientType=0 ); /* IE6-9 */
 	color: #eee;
 	font-family: "Ubuntu", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
@@ -380,7 +377,7 @@ form.video_provider {
 	bottom: 7px;
 	pointer-events: none;
 	font-size: 0.9em;
-	padding: 7px;
+	padding: 6px 9px 7px 7px;
 }
 
 .video_provider .upload_video .upload_fields .custom_file_upload {
