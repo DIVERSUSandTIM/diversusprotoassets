@@ -341,8 +341,8 @@ form.video_provider {
 .video_provider :focus{
 	  outline-color: lightblue;
 }
-.video_provider .mobile_page {
-	padding: 0 0 2em 0;
+.video_provider .mobile_page, .video_provider .additions {
+	padding: 1em 0 0 0;
 	max-width: 600px;
 	margin: auto;
 }
@@ -612,7 +612,7 @@ form.video_provider {
 	padding: 0.5em 2em;
 	color: #fff;
 	font-size: 0.9em;
-	margin: auto;
+	margin: 2em auto 5em;
   display: block;
 	background-color: #3d4469;
 }
@@ -785,6 +785,33 @@ form.video_provider {
   right: 0.2em;
 	border-radius: 1.2em;
 }
+fieldset.time_range_set {
+	width: 90%;
+}
+.record_time_in label, .record_time_in input, .record_time_in button {
+	display: inline-block;
+}
+.record_time_out label, .record_time_out input, .record_time_out button {
+	display: inline-block;
+}
+.record_time_in, .record_time_out {
+	width: 40%;
+	margin-left: 5%;
+	display: inline-block;
+}
+.record_time_in input, .record_time_out input {
+	width: 4em;
+	margin: 0 0.5em;
+	text-align: center;
+}
+.time_range_set legend {
+	text-align: center;
+}
+.record_time_out label, .record_time_in label {
+	color: #888;
+	font-size: 0.8em;
+}
+
 
 /* ------------------ View Playmedia -------------------*/
 .playvid_flexbox {
