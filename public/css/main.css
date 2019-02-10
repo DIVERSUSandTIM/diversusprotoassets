@@ -620,6 +620,35 @@ form.video_provider {
 	background-color: #202540;
 }
 
+/* ------------------ Afer submitting Video  -------------------*/
+
+.recording_status {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0;
+}
+
+.submit_progress {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.6;
+	top: 0;
+}
+.progress_info{
+	display: block;
+	position: absolute;
+	width: 100%;
+	padding: 3em 0;
+	top: 30vh;
+	margin: auto;
+	background-color: black;
+	text-align: center;
+}
+
 /* ------------------ Video Provider (Add video, upload or Link) for Playmedia  -------------------*/
 
 .video_provider.playmedia {
@@ -676,13 +705,17 @@ form.video_provider {
 	background-image: url("../graphics/video_default_thumb.png");
 	background-size: cover;
 	background-position: center;
-
 	overflow: hidden;
 }
 .video_image video {
 	height: 100%;
 	transform: translateX(-25%);
 }
+.video_image img {
+	height: 100%;
+	transform: translateX(-25%);
+}
+
 .video_description {
 	float: left;
 	display:inline-block;
@@ -768,6 +801,10 @@ form.video_provider {
 	flex: 1 1 auto;
 	min-height: 50px;
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	width: 100%;
 }
 .playvid_flexbox .row.flower_wrap {
 	flex: 0 0 auto;
@@ -855,7 +892,8 @@ form.video_provider {
 .a_flower {
 	display: block;
 	margin: auto;
-	width: 80%
+	width: 80%;
+	max-width: 500px;
 }
 .diversus-flower {
 }
