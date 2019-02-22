@@ -606,6 +606,13 @@ form.video_provider {
 	right: 0;
 	border: 2px dashed #777;
 }
+
+.video_provider button[type=submit]:disabled {
+	background-color: #333;
+  border: 1px solid #666;
+  color: #999;
+}
+
 .video_provider button[type=submit] {
 	border: 1px solid #888;
 	border-radius: 0;
@@ -615,6 +622,7 @@ form.video_provider {
 	margin: 2em auto 5em;
   display: block;
 	background-color: #3d4469;
+	cursor: pointer;
 }
 .video_provider button[type=submit]:active,  .video_provider button[type=submit]:focus{
 	background-color: #202540;
