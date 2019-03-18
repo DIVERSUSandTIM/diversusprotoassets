@@ -740,6 +740,9 @@ form.video_provider {
 	margin-top: 0.2em;
 	margin-bottom: 0.3em;
 	margin-right: 0.1em;
+	white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .video_description a{
 	text-decoration: none;
