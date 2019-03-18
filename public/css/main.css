@@ -771,8 +771,8 @@ form.video_provider {
 .video_description .schema__description {
 	margin-left: 1.1em;
 	font-size: 0.9em;
-	white-space: nowrap;
 	overflow: hidden;
+	max-height: 35px;
 	text-overflow: ellipsis;
 }
 
