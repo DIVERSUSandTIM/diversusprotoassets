@@ -601,6 +601,7 @@ form.video_provider {
 	top: 0;
 	border-radius: 40px;
 	border: 2px solid #777;
+	display: none;
 }
 .video_provider .tiny_thumb.source {
 	left: 0;
@@ -830,7 +831,9 @@ fieldset.time_range_set {
 	color: #888;
 	font-size: 0.8em;
 }
-
+.begin_lock, .end_lock {
+	background-color: white;
+}
 
 /* ------------------ View Playmedia -------------------*/
 .playvid_flexbox {
